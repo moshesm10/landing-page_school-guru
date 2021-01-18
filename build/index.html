@@ -11,14 +11,19 @@
     <div class="container">
         <nav class="menu">
             <img class="menu__logo" src="./img/favicon-inverse-128.png" alt="логотип school guru" width="60" height="60">
-            <ul class="menu__links">
-              <li class="menu__links-link-wrapper"><a href="#about">Обо мне</a></li>
-              <li class="menu__links-link-wrapper"><a href="#types">Направления консультаций</a></li>
-              <li class="menu__links-link-wrapper"><a href="#services">Услуги</a></li>
-              <li class="menu__links-link-wrapper"><a href="#contacts">Контакты</a></li>
-            </ul>
-            <div class="menu__phone">
-                <span class="menu__phone-phone"><a href=”tel:+79161696464”>+7 (916) 169-64-64</a></span>
+            <div class="menu__wrapper">
+                <ul class="menu__links">
+                    <li class="menu__links-link-wrapper"><a href="#about">Обо мне</a></li>
+                    <li class="menu__links-link-wrapper"><a href="#types">Направления консультаций</a></li>
+                    <li class="menu__links-link-wrapper"><a href="#services">Услуги</a></li>
+                    <li class="menu__links-link-wrapper"><a href="#contacts">Контакты</a></li>
+                </ul>
+                <div class="menu__phone">
+                    <span class="menu__phone-phone"><a href=”tel:+79161696464”>+7 (916) 169-64-64</a></span>
+                </div>
+            </div>
+            <div class="menu__burger">
+                <button class="menu__burger-button"><img src="./img/burger.svg" alt=""></button>
             </div>
         </nav>
     </div>
@@ -30,7 +35,7 @@
                 <div class="hero__description-titles">
                     <h1>Консультации по образованию</h1>
                     <span>school-guru</span>
-                    <h3>Частные профессиональные консультации по вопросам образования</h3>
+                    <h3>Частные профессиональные<br> консультации по вопросам<br> образования</h3>
                 </div>
                 <div class="hero__description-services">
                     <ul class="hero__description-services__wrapper">
@@ -45,7 +50,7 @@
                 </div>
             </div>
             <div class="hero__image-wrapper">
-                <img class="hero__image" src="./img/bg-pic 3.png" alt="фото основателя school guru"></img>
+                <img class="hero__image" src="./img/bg-pic 1.png" alt="фото основателя school guru"></img>
             </div>
         </header>
     </div>
@@ -158,7 +163,7 @@
             <div class="sevices-types__header">
                 <div class="sevices-types__header-titles">
                     <h2>Основные направления консультирования</h2>
-                    <h3>Я помогу вам решить проблемы и буду вашим<br> доверенным лицом и медиатором между школой<br> и семьей по следующим вопросам</h3>
+                    <h3>Я помогу вам решить проблемы и буду вашим доверенным лицом и медиатором между школой и семьей по следующим вопросам</h3>
                 </div>
                 <img src="./img/services-type.svg" alt="человек за компьютером машет рукой">
             </div>
@@ -199,7 +204,7 @@
         <section class="callback-block">
             <span class="callback-block__title">Давайте оставаться на связи</span>
             <div class="callback-block__content">
-                <form class="callback-block__content-email">
+                <form class="callback-block__content-email" id="form-main">
                     <input class="callback-block__content-email__input" type="email" name="email" id="email" placeholder="Ваш email">
                     <input class="callback-block__content-email__button" type="submit">
                 </form>
@@ -224,7 +229,7 @@
                 </div>
                 <img src="./img/benefit1.svg" alt="человек с биноклем">
             </div>
-            <div class="benefits__content">
+            <div class="benefits__content revers">
                 <img src="./img/benefit2.svg" alt="люди общаются за столом">
                 <div class="benefits__content-description">
                     <h4>Конфиденциальность и индивидуальный подход</h4>

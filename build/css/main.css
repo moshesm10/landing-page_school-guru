@@ -120,7 +120,8 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    transition: .2s; }
   .menu__logo {
     border-radius: 10px; }
   .menu__links {

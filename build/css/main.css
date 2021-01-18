@@ -62,6 +62,12 @@ body {
 .container-wide-footer {
   background: #474747; }
 
+.container-overflow {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 20px; }
+
 h4 {
   font-weight: 600;
   font-size: 24px;
@@ -105,7 +111,9 @@ h2 {
 
 .menu {
   display: flex;
-  margin-top: 15px;
+  max-width: 1200px;
+  margin: 30px auto 0;
+  padding: 0 20px;
   justify-content: space-between;
   align-items: center; }
   .menu__wrapper {
@@ -169,7 +177,9 @@ h2 {
 
 .hero {
   display: flex;
-  margin-bottom: 180px; }
+  max-width: 1200px;
+  margin: 60px auto 180px;
+  padding: 0 20px; }
   .hero__description {
     margin-top: 70px; }
     .hero__description-titles {
@@ -220,7 +230,7 @@ h2 {
     position: absolute;
     top: -130px;
     height: 1000px;
-    right: 0;
+    right: -100px;
     z-index: -1; }
   @media (max-width: 991px) {
     .hero__image {
@@ -246,7 +256,7 @@ h2 {
         border-radius: 20px;
         box-shadow: 1px 2px 13px 6px rgba(0, 0, 0, 0.05); }
         .hero__description-titles h1 {
-          font-size: 1.2em; }
+          font-size: 1em; }
         .hero__description-titles span {
           font-size: 2em; }
         .hero__description-titles h3 {
@@ -254,7 +264,8 @@ h2 {
       .hero__description-services {
         height: 150px; }
         .hero__description-services-text {
-          font-size: 0.8em; }
+          font-size: 0.8em;
+          line-height: 1.2em; }
           .hero__description-services-text::before {
             font-size: 40px;
             width: 0.6em; }

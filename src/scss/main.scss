@@ -41,20 +41,25 @@
     font-style: normal;
 }
 
+// == Var ==
+
 $bg-main-color: #FAF8F5;
 $black-text-color: #000;
 $main-text-color: #2D2D2D;
+$white: #FFF;
+$footer-links: #EAEAEA;
+$grey-1: #818A91;
+$grey-2: #474747;
 
 $screen-xs-min: 345px;
-$screen-sm-min: 576px;
 $screen-md-min: 768px;
-$screen-lg-min: 992px;
-$screen-xl-min: 1200px;
 
 $screen-xs-max: 575px;
 $screen-sm-max: 767px;
 $screen-md-max: 991px;
 $screen-lg-max: 1199px;
+
+// == COMMON ==
 
 body {
     margin: 0;
@@ -81,7 +86,7 @@ body {
 }
 
 .container-wide-footer {
-    background: #474747;
+    background: $grey-2;
 }
 
 .container-overflow {
@@ -104,7 +109,7 @@ h3 {
     font-size: 24px;
     line-height: 130%;
 
-    color: #818A91;
+    color: $grey-1;
 }
 
 h2 {
@@ -112,7 +117,7 @@ h2 {
     font-size: 48px;
     line-height: 48px;
 
-    color: #000000;
+    color: $main-text-color;
 }
 
 .descr {
@@ -128,7 +133,7 @@ h2 {
     font-weight: 600;
     font-size: 19px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: $white;
     background: linear-gradient(137.3deg, #EDCE31 -82.82%, #FA742E 70.91%);
     border-radius: 20px;
     border: none;
@@ -143,8 +148,6 @@ h2 {
         font-size: 18px;
     }
 }
-
-
 
 // == Menu ==
 
@@ -201,7 +204,7 @@ h2 {
                 line-height: 38px;
 
                 text-decoration: none;
-                color: #FFFFFF;
+                color: $white;
             }
         }
         
@@ -235,7 +238,7 @@ h2 {
             width: 100%;
             left: -100vw;
             top: 0;
-            background: #ffffff;
+            background: $white;
         }
 
         &__links {
@@ -303,7 +306,7 @@ h2 {
             margin-bottom: 30px;
             padding-right: 20px;
             align-items: center;
-            background: #FFFFFF;
+            background: $white;
             box-shadow: 1px 2px 13px 6px rgba(0, 0, 0, 0.05);
             border-radius: 20px;
 
@@ -382,7 +385,7 @@ h2 {
             
 
             &-titles {
-                background: #ffffff;
+                background: $white;
                 padding: 11px;
                 border-radius: 20px;
                 box-shadow: 1px 2px 13px 6px rgba(0, 0, 0, 0.05);
@@ -432,7 +435,7 @@ h2 {
         font-size: 36px;
         line-height: 43px;
 
-        color: #818A91;
+        color: $grey-1;
     }
 }
 
@@ -530,7 +533,7 @@ h2 {
             font-size: 20px;
             line-height: 26px;
 
-            color: #818A91;
+            color: $grey-1;
         }
     }
 
@@ -589,9 +592,9 @@ h2 {
 
             &-black {
                 margin-bottom: 15px;
-                color: #fff;
+                color: $white;
 
-                background: #474747;
+                background: $grey-2;
                 border-radius: 40px 40px 40px 0px;
             }
 
@@ -669,9 +672,8 @@ h2 {
         &-card {
             padding: 30px;
             margin-bottom: 60px;
-            max-width: 280px;//width: 300px;
-            //height: 270px;
-            background: #FFFFFF;
+            max-width: 280px;
+            background: $white;
             box-shadow: 1px 2px 13px 6px rgba(0, 0, 0, 0.05);
             border-radius: 20px;
 
@@ -701,7 +703,7 @@ h2 {
         font-size: 36px;
         line-height: 36px;
 
-        color: #FFFFFF;
+        color: $white;
     }
 
     &__content {
@@ -717,7 +719,7 @@ h2 {
                 font-size: 16px;
                 line-height: 24px;
 
-                color: #FFFFFF;
+                color: $white;
             }  
             
             a {
@@ -832,7 +834,7 @@ h2 {
 
     
             padding: 0 40px;
-            background: #FFFFFF;
+            background: $white;
             box-shadow: 1px 2px 13px 6px rgba(0, 0, 0, 0.05);
             border-radius: 20px;
 
@@ -891,7 +893,7 @@ h2 {
                 bottom: 28px;
 
                 border: none;
-                color: #fff;
+                color: $white;
                 
                 font-weight: 600;
                 font-size: 19px;
@@ -899,7 +901,7 @@ h2 {
 
                 cursor: pointer;
 
-                background: #474747;
+                background: $grey-2;
                 box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.05);
                 border-radius: 20px;
 
@@ -915,21 +917,21 @@ h2 {
 
                 h4 {
                     font-weight: 800;
-                    color: #fff;
+                    color: $white;
                 }
 
                 & .price-block__cards-card__price {
-                    color: #fff;
+                    color: $white;
                     font-weight: 800;
                 }
 
                 & .descr {
-                    color: #fff;
+                    color: $white;
                     text-align: left;
                 }
 
                 li {
-                    color: #fff;
+                    color: $white;
                 }
 
                 & .price-block__cards-card__button {
@@ -983,7 +985,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     
-    color: #fff;
+    color: $white;
 
     &__block {
         padding: 30px 0;
@@ -997,7 +999,7 @@ h2 {
 
         &-title {
             max-width: 260px;
-            color: #fff;
+            color: $white;
         }
 
         &-image {
@@ -1036,7 +1038,7 @@ h2 {
             font-size: 36px;
             line-height: 43px;
 
-            color: #818A91;
+            color: $grey-1;
         }
     }
 
@@ -1063,7 +1065,7 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 20px;
-    color: #EAEAEA;
+    color: $footer-links;
 
     &__name {
         display: flex;
@@ -1106,7 +1108,7 @@ h2 {
                 font-size: 30px;
                 line-height: 38px;
                 text-decoration: underline;
-                color: #EAEAEA;
+                color: $footer-links;
             }
             
         }
@@ -1121,7 +1123,7 @@ h2 {
                 line-height: 27px;
                 letter-spacing: 0.27px;
                 text-decoration: underline;
-                color: #EAEAEA;
+                color: $footer-links;
             }
             
         }
@@ -1160,12 +1162,11 @@ h2 {
                 &-title {
                     font-size: 1.5em;
                 }
-    
+
                 &-part-title {
                     font-size: 3em;
                 }
             }
-            
         }
     }
 }

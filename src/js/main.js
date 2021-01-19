@@ -17,4 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Ссылки на регистрацию
+    const buttons = document.querySelectorAll('button[data-click="true"]');
+    buttons.forEach(item => {
+        item.addEventListener('click', () => {
+            document.location = "https://widget.bookform.ru/46754/";
+        });
+    });
 });

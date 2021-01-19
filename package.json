@@ -1,12 +1,17 @@
 {
   "name": "schoolguru",
   "version": "1.0.0",
-  "description": "Landing page school-guru",
+  "description": "Landing page for consulting agency school-guru",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moshesm10/landing-page_school-guru.git"
+  },
   "author": "moshesm10",
   "license": "ISC",
   "browserslist": [
     "defaults"
   ],
+  "homepage": "https://github.com/moshesm10/landing-page_school-guru#readme",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
